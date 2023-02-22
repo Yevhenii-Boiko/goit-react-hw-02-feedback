@@ -4,6 +4,7 @@ import { Statistics } from './Statistics/Statistics';
 import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
 import { Layout } from './Layout/Layout';
+import { GlobalStyle } from 'GlobalStyle';
 
 export class App extends Component {
   state = {
@@ -33,6 +34,7 @@ export class App extends Component {
   render() {
     return (
       <Layout>
+        <GlobalStyle />
         <Section title="Please leave feedbak">
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
